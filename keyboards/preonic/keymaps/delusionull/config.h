@@ -18,7 +18,6 @@
   Q__NOTE(_E5), Q__NOTE(_F5), Q__NOTE(_G5), Q__NOTE(_E5), Q__NOTE(_F5), Q__NOTE(_G5), \
   Q__NOTE(_A5), Q__NOTE(_B5), H__NOTE(_C6), H__NOTE(_B5), H__NOTE(_C6)
 
-
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(MS_PAC_MAN_INTRO)
     // #define STARTUP_SONG SONG(NO_SOUND)
