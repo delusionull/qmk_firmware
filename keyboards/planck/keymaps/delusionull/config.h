@@ -1,11 +1,26 @@
 #pragma once
 
+#define TAPPING_TERM 200
+
+#define THE_IMPERIAL_MARCH \
+  HD_NOTE(_A4), HD_NOTE(_A4), HD_NOTE(_A4), H__NOTE(_F4), Q__NOTE(_C5), \
+  HD_NOTE(_A4), H__NOTE(_F4),  Q__NOTE(_C5), WD_NOTE(_A4), \
+  HD_NOTE(_E5), HD_NOTE(_E5), HD_NOTE(_E5), H__NOTE(_F5), Q__NOTE(_C5), \
+  HD_NOTE(_A4), H__NOTE(_F4),  Q__NOTE(_C5), WD_NOTE(_A4)
+
+#define MS_PAC_MAN_INTRO \
+  ED_NOTE(_G4), ED_NOTE(_A4), ED_NOTE(_B4), \
+  H__NOTE(_C5), H__NOTE(_E5), H__NOTE(_D5), H__NOTE(_F5), \
+  Q__NOTE(_E5), Q__NOTE(_F5), Q__NOTE(_G5), Q__NOTE(_E5), H__NOTE(_D5), H__NOTE(_F5), \
+  Q__NOTE(_E5), Q__NOTE(_F5), Q__NOTE(_G5), Q__NOTE(_E5), Q__NOTE(_F5), Q__NOTE(_G5), \
+  Q__NOTE(_A5), Q__NOTE(_B5), H__NOTE(_C6), H__NOTE(_B5), H__NOTE(_C6)
+
 #ifdef AUDIO_ENABLE
-    #define STARTUP_SONG SONG(PLANCK_SOUND)
+    #define STARTUP_SONG SONG(MS_PAC_MAN_INTRO)
     // #define STARTUP_SONG SONG(NO_SOUND)
 
-    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                                  SONG(DVORAK_SOUND) \
+    #define DEFAULT_LAYER_SONGS { SONG(DVORAK_SOUND), \
+                                  SONG(QWERTY_SOUND) \
                                 }
 #endif
 
